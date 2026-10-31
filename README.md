@@ -3,6 +3,7 @@
 ## 概要
 
 主な機能：
+
 - 初期RDBスキーマとORM設定
 - OAuth認証とメアドパスワード認証
 - アプリ本体とDBの即デプロイ設定
@@ -25,10 +26,10 @@
 
 アーキテクチャや実装方針を明文化
 
-1. 常にDBスキーマを唯一の情報源（Single Source of Truth）とし、エンティティ関連の多重定義と分散を防ぐ[SSOT戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/drizzle-zod-ssot.md)。具体的にはRDBスキーマからZodスキーマとTS型を自動生成して使いまわすもの
-2. 親コンポーネントのUIレンダリングをブロックしない非同期データフェッチとキャッシュ設計、ディレクトリ設計、UI状態管理ソースとしてのクエリパラメータ活用などを定義した[`TanStack`運用戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/tanstack-router.md)
-3. `本番`, `開発統合`, `各作業`の3層ブランチ構造に連動させた各環境自動ビルド[CD戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/gitflow-hosting-cd.md)
-4. デザインシステム、アクセシビリティなどの[UI構築戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/ui.md)
+1. 常にDBスキーマを唯一の情報源（Single Source of Truth）とし、エンティティ関連の多重定義と分散を防ぐ[SSOT戦略](https://github.com/ok200ok/full-tanstack-starter/blob/main/docs/drizzle-zod-ssot.md)。具体的にはRDBスキーマからZodスキーマとTS型を自動生成して使いまわすもの
+2. 親コンポーネントのUIレンダリングをブロックしない非同期データフェッチとキャッシュ設計、ディレクトリ設計、UI状態管理ソースとしてのクエリパラメータ活用などを定義した[`TanStack`運用戦略](https://github.com/ok200ok/full-tanstack-starter/blob/main/docs/tanstack-router.md)
+3. `本番`, `開発統合`, `各作業`の3層ブランチ構造に連動させた各環境自動ビルド[CD戦略](https://github.com/ok200ok/full-tanstack-starter/blob/main/docs/gitflow-hosting-cd.md)
+4. デザインシステム、アクセシビリティなどの[UI構築戦略](https://github.com/ok200ok/full-tanstack-starter/blob/main/docs/ui.md)
 
 ```text
 docs/
