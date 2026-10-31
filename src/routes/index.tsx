@@ -32,11 +32,11 @@ function Home() {
         <ThemeToggle />
         <a
           className="text-muted-foreground hover:text-foreground underline"
-          href="https://github.com/200okmk/full-tanstack-starter"
+          href="https://github.com/ok200ok/full-tanstack-starter"
           target="_blank"
           rel="noreferrer noopener"
         >
-          200okmk/full-tanstack-starter
+          ok200ok/full-tanstack-starter
         </a>
       </div>
     </div>
